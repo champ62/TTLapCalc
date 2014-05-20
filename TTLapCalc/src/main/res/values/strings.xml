@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TT Speed / Laptime Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="TTSpeedCalculator">TT Speed Calculator</string>
+    <string name="calcSpeed">Speed</string>
+    <string name="calcLaptime">Time</string>
+    <string name="speed">Lap speed</string>
+    <string name="laptime_mins">Laptime (mins)</string>
+    <string name="laptime_mins_default">19</string>
+    <string name="laptime_secs">Laptime (secs)</string>
+    <string name="laptime_secs_default">0.00</string>
+    <string name="secsLabel">ss.cc</string>
+    <string name="minsLabel">mm</string>
+    <string name="speedLabel">mph</string>
+    <string name="speed_default">120</string>
+    <string name="bad_seconds">Only 60 seconds in a minute!</string>
+
+</resources>
