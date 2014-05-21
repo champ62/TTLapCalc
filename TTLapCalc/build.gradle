@@ -5,10 +5,10 @@ android {
     buildToolsVersion "19.0.3"
 
     defaultConfig {
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 19
-        versionCode 3
-        versionName "1.2"
+        versionCode 4
+        versionName "1.3"
     }
 
     signingConfigs {
@@ -34,5 +34,6 @@ android {
 dependencies {
     compile 'com.android.support:gridlayout-v7:19.0.1'
     compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:support-v4:18.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

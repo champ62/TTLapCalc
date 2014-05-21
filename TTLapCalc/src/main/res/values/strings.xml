@@ -16,5 +16,7 @@
     <string name="speedLabel">mph</string>
     <string name="speed_default">120</string>
     <string name="bad_seconds">Only 60 seconds in a minute!</string>
+    <string name="title_race_list">Races</string>
+    <string name="title_race_detail">Race Detail</string>
 
 </resources>

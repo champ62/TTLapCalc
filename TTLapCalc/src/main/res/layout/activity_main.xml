@@ -22,6 +22,17 @@
         android:layout_alignRight="@+id/calcSpeed"
         android:layout_alignEnd="@+id/calcSpeed" />
 
+    <Button
+        android:id="@+id/clear_mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x"
+        android:onClick="clearMins"
+        android:layout_alignBottom="@id/laptime_mins"
+        android:layout_alignTop="@+id/laptime_mins"
+        android:layout_alignRight="@+id/minsLabel"
+        android:layout_alignEnd="@+id/minsLabel" />
+
     <EditText
         android:id="@+id/laptime_secs"
         android:layout_width="wrap_content"
@@ -32,7 +43,20 @@
         android:text="@string/laptime_secs_default"
         android:ems="10"
         android:layout_alignTop="@id/laptime_mins"
-        android:layout_toRightOf="@+id/minsLabel" />
+        android:layout_toRightOf="@+id/minsLabel"
+        android:layout_alignRight="@+id/speedLabel"
+        android:layout_alignEnd="@+id/speedLabel" />
+
+    <Button
+        android:id="@+id/clear_secs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x"
+        android:onClick="clearSecs"
+        android:layout_alignBottom="@id/laptime_secs"
+        android:layout_alignTop="@+id/laptime_secs"
+        android:layout_alignRight="@+id/secsLabel"
+        android:layout_alignEnd="@+id/secsLabel" />
 
     <TextView
         android:id="@+id/minsLabel"
@@ -80,10 +104,9 @@
         android:layout_height="wrap_content"
         android:onClick="calcTime"
         android:text="@string/calcLaptime"
-        android:layout_alignTop="@+id/calcSpeed"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentEnd="true"
-        android:drawableBottom="@drawable/u"/>
+        android:drawableBottom="@drawable/u"
+        android:layout_below="@+id/secsLabel"
+        android:layout_toLeftOf="@+id/clear_secs" />
 
     <EditText
         android:id="@+id/speed"
@@ -96,7 +119,19 @@
         android:text="@string/speed_default"
         android:layout_below="@+id/calcTime"
         android:layout_alignLeft="@+id/speedLabel"
-        android:layout_alignStart="@+id/speedLabel" />
+        android:layout_alignStart="@+id/speedLabel"
+        android:layout_alignRight="@+id/speedLabel"
+        android:layout_alignEnd="@+id/speedLabel" />
+
+    <Button
+        android:id="@+id/clear_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x"
+        android:onClick="clearSpeed"
+        android:layout_below="@+id/calcTime"
+        android:layout_alignRight="@+id/secsLabel"
+        android:layout_alignEnd="@+id/secsLabel" />
 
     <TextView
         android:id="@+id/speedLabel"
